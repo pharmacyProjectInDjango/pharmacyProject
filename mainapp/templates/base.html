@@ -1,0 +1,257 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Django Pharmacy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- front css -->
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Brygada+1918&display=swap');
+
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Brygada 1918', serif;
+    letter-spacing: 0.06em;
+}
+
+body {
+    padding-top: 56px;
+}
+
+.table tbody tr td img {
+    height: 100px;
+    object-fit: cover;
+}
+
+.breadcrumb,
+table,
+.list-group a {
+    border-radius: 0;
+    background: #c2c9d1;
+    background: -webkit-linear-gradient(to right, #dfe3e9, #dde1ec);
+    background: linear-gradient(to right, #ffffff, #e6e9ec);
+}
+
+nav,
+footer,
+.product {
+    background: #141e30;
+    background: -webkit-linear-gradient(to right, #141e30, #243b55);
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.alert {
+    color: white;
+    background: #799F0C;
+    background: -webkit-linear-gradient(to right, #ACBB78, #799F0C);
+    background: linear-gradient(to right, #ACBB78, #799F0C);
+}
+
+.navbar-brand {
+    letter-spacing: 0.1em;
+    font-size: 25px;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.product {
+    color: white;
+    background-color: black;
+    padding: 3vmax;
+}
+
+.card {
+    border-radius: 18px;
+    background: center/cover no-repeat;
+    min-height: 200px;
+}
+
+button img {
+    transition: ease-in-out .3s;
+}
+
+button:hover img {
+    content: url("./images/shopping-cart\ 1.png");
+}
+
+.card:hover .card-body {
+    opacity: 1;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card-body {
+    transition: ease-in-out .3s;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.card-body .text {
+    height: 70%;
+    margin: 30% 0 0;
+}
+
+.card .card-img-top {
+    object-fit: cover;
+    height: 120px;
+    border-radius: 18px 18px 0 0;
+}
+
+.card .card-body .card-title a {
+    text-decoration: none;
+}
+{#footer {#}
+{#    position: absolute; /* Фиксированное положение */#}
+{#    left: 0; bottom: 0; /* Левый нижний угол */#}
+{#    padding: 10px; /* Поля вокруг текста */#}
+{#    width: 100%; /* Ширина слоя */#}
+{#   }#}
+    .order-form {
+        width: 600px;
+        flex-direction: column;
+    }
+
+    @media (max-width:770px) {
+        .order-form {
+            width: 80%;
+        }
+    }
+    </style>
+    <!-- Custom styles for this template -->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'base' %}">Django</a>
+                  {% if not request.user.is_authenticated %}
+            <a class="navbar-text text-light" href="{% url 'login' %}" style="margin-left: 100px">Login</a>
+            <a class="navbar-text text-light" href="{% url 'registration' %}"style="margin-left: 50px">Regist</a>
+                {% else %}
+              <li class="nav-item">
+                  <span class="navbar-text text-light">{% if request.user.is_authenticated %}
+                  {% endif %}
+                      <a href="{% url 'logout' %}" style="margin-right: 600px">Logout</a>
+                  </span>
+              </li>
+          {% endif %}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <ul class="navbar-nav">
+
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'cart' %}">
+                            <img src="{% static 'mainapp/shopping-cart.jpg' %}" width="18" alt="">
+                            <span class="ml-1 badge badge-pill badge-light">
+                                There is only
+                                {{ cart.products.count }}
+                                item in my cart
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 mt-5">
+        <div class="list-group">
+          {% for category in categories %}
+          <a href="{{ category.get_absolute_url }}" class="list-group-item">{{ category.name }} ({{ category.product_set.count }})</a>
+          {% endfor %}
+        </div>
+      {% block productfilter %}
+      {% endblock productfilter %}
+      </div>
+            <!-- /.col-lg-3 -->
+
+            <div class="col-lg-9">
+                {% block content %} {% if messages %} {% for message in messages %}
+                <div class="alert   alert-dismissible text-center fade show mt-3" role="alert">
+                    <strong>{{ message }}</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                {% endfor %} {% endif %}
+                <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+
+                </div>
+
+               <div class="row">
+    {% for product in products %}
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center h-100 position-relative" style="background-image: url({{ product.image.url }});">
+            <div class="card-body">
+                <div class="text">
+                    <p class="card-title">
+                        <a class="text-light text-decoration-none" href="{{ product.get_absolute_url }}">
+                            {{ product.title }}
+                        </a>
+                    </p>
+                    <h5 class="text-light">
+                        {{ product.price }} kzt.
+                    </h5>
+                    <a href="{% url 'add_to_cart' slug=product.slug %}">
+                        <button class="btn btn-outline-light">
+                        Добавить
+                        <img class="ml-1" src="{% static 'mainapp/shopping-cart.jpg' %}" width="13" >
+                    </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                {% endfor %}
+            </div>
+            <!-- /.row -->
+            {% endblock content %}
+        </div>
+        <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark" style="margin-top: 100px;">
+        <div class="container">
+            <p class="m-0 text-center text-white">Online pharmacy</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
