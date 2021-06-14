@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB3853EB078BF3CCA0ADE2F6 /* Pods_apteka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C5698EED373AE28BFBEE3E /* Pods_apteka.framework */; };
+		EC495762263D5C3700B531E8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC495761263D5C3700B531E8 /* Product.swift */; };
+		EC49576F263D65E100B531E8 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49576E263D65E100B531E8 /* ProductController.swift */; };
+		EC495774263D683B00B531E8 /* CartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC495773263D683A00B531E8 /* CartController.swift */; };
+		EC5A8414263C91AF00715A9B /* PharmacyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A8412263C91AF00715A9B /* PharmacyCell.swift */; };
+		EC5A8415263C91AF00715A9B /* PharmacyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5A8413263C91AF00715A9B /* PharmacyCell.xib */; };
+		EC7439972628B3A30027C458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7439962628B3A30027C458 /* AppDelegate.swift */; };
+		EC7439992628B3A30027C458 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7439982628B3A30027C458 /* SceneDelegate.swift */; };
+		EC74399E2628B3A30027C458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC74399C2628B3A30027C458 /* Main.storyboard */; };
+		EC7439A02628B3A60027C458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC74399F2628B3A60027C458 /* Assets.xcassets */; };
+		EC7439A32628B3A60027C458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7439A12628B3A60027C458 /* LaunchScreen.storyboard */; };
+		EC7439AE2628B3A60027C458 /* aptekaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7439AD2628B3A60027C458 /* aptekaTests.swift */; };
+		EC7439B92628B3A60027C458 /* aptekaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7439B82628B3A60027C458 /* aptekaUITests.swift */; };
+		EC7439CE2628C9C50027C458 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7439CD2628C9C40027C458 /* RegistrationController.swift */; };
+		EC7439D62628CC1D0027C458 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7439D52628CC1D0027C458 /* LoginController.swift */; };
+		EC7439DB2628D02C0027C458 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7439DA2628D02C0027C458 /* MainController.swift */; };
+		EC9984F1265A62BD00D9B4FD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9984F0265A62BD00D9B4FD /* MapViewController.swift */; };
+		ECB3D8FB263211B300FDF153 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3D8FA263211B300FDF153 /* ProfileController.swift */; };
+		ECC8DB042676F77600438393 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC8DB032676F77600438393 /* Category.swift */; };
+		ECC8DB092676FE5200438393 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECC8DB082676FE5200438393 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC7439AA2628B3A60027C458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC74398B2628B3A30027C458 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7439922628B3A30027C458;
+			remoteInfo = apteka;
+		};
+		EC7439B52628B3A60027C458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC74398B2628B3A30027C458 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7439922628B3A30027C458;
+			remoteInfo = apteka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12C5698EED373AE28BFBEE3E /* Pods_apteka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_apteka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E5FAB024A8AE8EFAB4C88C8 /* Pods-apteka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-apteka.debug.xcconfig"; path = "Target Support Files/Pods-apteka/Pods-apteka.debug.xcconfig"; sourceTree = "<group>"; };
+		D0B346EABE72765F28367B9C /* Pods-apteka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-apteka.release.xcconfig"; path = "Target Support Files/Pods-apteka/Pods-apteka.release.xcconfig"; sourceTree = "<group>"; };
+		EC495761263D5C3700B531E8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		EC49576E263D65E100B531E8 /* ProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
+		EC495773263D683A00B531E8 /* CartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartController.swift; sourceTree = "<group>"; };
+		EC5A8412263C91AF00715A9B /* PharmacyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyCell.swift; sourceTree = "<group>"; };
+		EC5A8413263C91AF00715A9B /* PharmacyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyCell.xib; sourceTree = "<group>"; };
+		EC7439932628B3A30027C458 /* apteka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = apteka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7439962628B3A30027C458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC7439982628B3A30027C458 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC74399D2628B3A30027C458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC74399F2628B3A60027C458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC7439A22628B3A60027C458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC7439A42628B3A60027C458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7439A92628B3A60027C458 /* aptekaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aptekaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7439AD2628B3A60027C458 /* aptekaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aptekaTests.swift; sourceTree = "<group>"; };
+		EC7439AF2628B3A60027C458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7439B42628B3A60027C458 /* aptekaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aptekaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7439B82628B3A60027C458 /* aptekaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aptekaUITests.swift; sourceTree = "<group>"; };
+		EC7439BA2628B3A60027C458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7439CD2628C9C40027C458 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		EC7439D52628CC1D0027C458 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		EC7439DA2628D02C0027C458 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		EC9984F0265A62BD00D9B4FD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		ECB3D8FA263211B300FDF153 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		ECC8DB032676F77600438393 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		ECC8DB082676FE5200438393 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC7439902628B3A30027C458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3853EB078BF3CCA0ADE2F6 /* Pods_apteka.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7439A62628B3A60027C458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7439B12628B3A60027C458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44BF1A9F76816C62FB003907 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E5FAB024A8AE8EFAB4C88C8 /* Pods-apteka.debug.xcconfig */,
+				D0B346EABE72765F28367B9C /* Pods-apteka.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC495760263D5C2A00B531E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC495761263D5C3700B531E8 /* Product.swift */,
+				ECC8DB032676F77600438393 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC74398A2628B3A30027C458 = {
+			isa = PBXGroup;
+			children = (
+				EC7439952628B3A30027C458 /* apteka */,
+				EC7439AC2628B3A60027C458 /* aptekaTests */,
+				EC7439B72628B3A60027C458 /* aptekaUITests */,
+				EC7439942628B3A30027C458 /* Products */,
+				44BF1A9F76816C62FB003907 /* Pods */,
+				F6F199F244EF8A03E37CCFC6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC7439942628B3A30027C458 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC7439932628B3A30027C458 /* apteka.app */,
+				EC7439A92628B3A60027C458 /* aptekaTests.xctest */,
+				EC7439B42628B3A60027C458 /* aptekaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC7439952628B3A30027C458 /* apteka */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8DB082676FE5200438393 /* GoogleService-Info.plist */,
+				EC495760263D5C2A00B531E8 /* Model */,
+				EC7439C92628B5190027C458 /* Controllers */,
+				ECB3D8EE2632061800FDF153 /* Extra */,
+				ECB3D8F22632062200FDF153 /* View */,
+				EC7439A42628B3A60027C458 /* Info.plist */,
+			);
+			path = apteka;
+			sourceTree = "<group>";
+		};
+		EC7439AC2628B3A60027C458 /* aptekaTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC7439AD2628B3A60027C458 /* aptekaTests.swift */,
+				EC7439AF2628B3A60027C458 /* Info.plist */,
+			);
+			path = aptekaTests;
+			sourceTree = "<group>";
+		};
+		EC7439B72628B3A60027C458 /* aptekaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC7439B82628B3A60027C458 /* aptekaUITests.swift */,
+				EC7439BA2628B3A60027C458 /* Info.plist */,
+			);
+			path = aptekaUITests;
+			sourceTree = "<group>";
+		};
+		EC7439C92628B5190027C458 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC7439CD2628C9C40027C458 /* RegistrationController.swift */,
+				EC7439D52628CC1D0027C458 /* LoginController.swift */,
+				EC7439DA2628D02C0027C458 /* MainController.swift */,
+				ECB3D8FA263211B300FDF153 /* ProfileController.swift */,
+				EC49576E263D65E100B531E8 /* ProductController.swift */,
+				EC495773263D683A00B531E8 /* CartController.swift */,
+				EC9984F0265A62BD00D9B4FD /* MapViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ECB3D8EE2632061800FDF153 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				EC7439962628B3A30027C458 /* AppDelegate.swift */,
+				EC7439982628B3A30027C458 /* SceneDelegate.swift */,
+				EC74399F2628B3A60027C458 /* Assets.xcassets */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		ECB3D8F22632062200FDF153 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC74399C2628B3A30027C458 /* Main.storyboard */,
+				EC7439A12628B3A60027C458 /* LaunchScreen.storyboard */,
+				EC5A8412263C91AF00715A9B /* PharmacyCell.swift */,
+				EC5A8413263C91AF00715A9B /* PharmacyCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6F199F244EF8A03E37CCFC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12C5698EED373AE28BFBEE3E /* Pods_apteka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC7439922628B3A30027C458 /* apteka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7439BD2628B3A60027C458 /* Build configuration list for PBXNativeTarget "apteka" */;
+			buildPhases = (
+				7CCF80D836367F2A4C67B75E /* [CP] Check Pods Manifest.lock */,
+				EC74398F2628B3A30027C458 /* Sources */,
+				EC7439902628B3A30027C458 /* Frameworks */,
+				EC7439912628B3A30027C458 /* Resources */,
+				73990DFC7ECB26E1E811957D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = apteka;
+			productName = apteka;
+			productReference = EC7439932628B3A30027C458 /* apteka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC7439A82628B3A60027C458 /* aptekaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7439C02628B3A60027C458 /* Build configuration list for PBXNativeTarget "aptekaTests" */;
+			buildPhases = (
+				EC7439A52628B3A60027C458 /* Sources */,
+				EC7439A62628B3A60027C458 /* Frameworks */,
+				EC7439A72628B3A60027C458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC7439AB2628B3A60027C458 /* PBXTargetDependency */,
+			);
+			name = aptekaTests;
+			productName = aptekaTests;
+			productReference = EC7439A92628B3A60027C458 /* aptekaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC7439B32628B3A60027C458 /* aptekaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7439C32628B3A60027C458 /* Build configuration list for PBXNativeTarget "aptekaUITests" */;
+			buildPhases = (
+				EC7439B02628B3A60027C458 /* Sources */,
+				EC7439B12628B3A60027C458 /* Frameworks */,
+				EC7439B22628B3A60027C458 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC7439B62628B3A60027C458 /* PBXTargetDependency */,
+			);
+			name = aptekaUITests;
+			productName = aptekaUITests;
+			productReference = EC7439B42628B3A60027C458 /* aptekaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC74398B2628B3A30027C458 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					EC7439922628B3A30027C458 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					EC7439A82628B3A60027C458 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = EC7439922628B3A30027C458;
+					};
+					EC7439B32628B3A60027C458 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = EC7439922628B3A30027C458;
+					};
+				};
+			};
+			buildConfigurationList = EC74398E2628B3A30027C458 /* Build configuration list for PBXProject "apteka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC74398A2628B3A30027C458;
+			productRefGroup = EC7439942628B3A30027C458 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC7439922628B3A30027C458 /* apteka */,
+				EC7439A82628B3A60027C458 /* aptekaTests */,
+				EC7439B32628B3A60027C458 /* aptekaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC7439912628B3A30027C458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7439A32628B3A60027C458 /* LaunchScreen.storyboard in Resources */,
+				EC7439A02628B3A60027C458 /* Assets.xcassets in Resources */,
+				ECC8DB092676FE5200438393 /* GoogleService-Info.plist in Resources */,
+				EC5A8415263C91AF00715A9B /* PharmacyCell.xib in Resources */,
+				EC74399E2628B3A30027C458 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7439A72628B3A60027C458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7439B22628B3A60027C458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73990DFC7ECB26E1E811957D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-apteka/Pods-apteka-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-apteka/Pods-apteka-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-apteka/Pods-apteka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CCF80D836367F2A4C67B75E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-apteka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC74398F2628B3A30027C458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9984F1265A62BD00D9B4FD /* MapViewController.swift in Sources */,
+				EC7439972628B3A30027C458 /* AppDelegate.swift in Sources */,
+				EC49576F263D65E100B531E8 /* ProductController.swift in Sources */,
+				EC495762263D5C3700B531E8 /* Product.swift in Sources */,
+				EC7439D62628CC1D0027C458 /* LoginController.swift in Sources */,
+				EC7439CE2628C9C50027C458 /* RegistrationController.swift in Sources */,
+				EC7439992628B3A30027C458 /* SceneDelegate.swift in Sources */,
+				EC7439DB2628D02C0027C458 /* MainController.swift in Sources */,
+				EC495774263D683B00B531E8 /* CartController.swift in Sources */,
+				EC5A8414263C91AF00715A9B /* PharmacyCell.swift in Sources */,
+				ECB3D8FB263211B300FDF153 /* ProfileController.swift in Sources */,
+				ECC8DB042676F77600438393 /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7439A52628B3A60027C458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7439AE2628B3A60027C458 /* aptekaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7439B02628B3A60027C458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7439B92628B3A60027C458 /* aptekaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC7439AB2628B3A60027C458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7439922628B3A30027C458 /* apteka */;
+			targetProxy = EC7439AA2628B3A60027C458 /* PBXContainerItemProxy */;
+		};
+		EC7439B62628B3A60027C458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7439922628B3A30027C458 /* apteka */;
+			targetProxy = EC7439B52628B3A60027C458 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC74399C2628B3A30027C458 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC74399D2628B3A30027C458 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC7439A12628B3A60027C458 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC7439A22628B3A60027C458 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC7439BB2628B3A60027C458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC7439BC2628B3A60027C458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC7439BE2628B3A60027C458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E5FAB024A8AE8EFAB4C88C8 /* Pods-apteka.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = apteka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.apteka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC7439BF2628B3A60027C458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0B346EABE72765F28367B9C /* Pods-apteka.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = apteka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.apteka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC7439C12628B3A60027C458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = aptekaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.aptekaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/apteka.app/apteka";
+			};
+			name = Debug;
+		};
+		EC7439C22628B3A60027C458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = aptekaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.aptekaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/apteka.app/apteka";
+			};
+			name = Release;
+		};
+		EC7439C42628B3A60027C458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = aptekaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.aptekaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = apteka;
+			};
+			name = Debug;
+		};
+		EC7439C52628B3A60027C458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = aptekaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.aptekaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = apteka;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC74398E2628B3A30027C458 /* Build configuration list for PBXProject "apteka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7439BB2628B3A60027C458 /* Debug */,
+				EC7439BC2628B3A60027C458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7439BD2628B3A60027C458 /* Build configuration list for PBXNativeTarget "apteka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7439BE2628B3A60027C458 /* Debug */,
+				EC7439BF2628B3A60027C458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7439C02628B3A60027C458 /* Build configuration list for PBXNativeTarget "aptekaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7439C12628B3A60027C458 /* Debug */,
+				EC7439C22628B3A60027C458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7439C32628B3A60027C458 /* Build configuration list for PBXNativeTarget "aptekaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7439C42628B3A60027C458 /* Debug */,
+				EC7439C52628B3A60027C458 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC74398B2628B3A30027C458 /* Project object */;
+}
